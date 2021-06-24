@@ -10,6 +10,7 @@ import BookmarkBorderTwoToneIcon from '@material-ui/icons/BookmarkBorderTwoTone'
 import ListAltTwoToneIcon from '@material-ui/icons/ListAltTwoTone';
 import MoreHorizTwoToneIcon from '@material-ui/icons/MoreHorizTwoTone';
 import PermIdentityTwoToneIcon from '@material-ui/icons/PermIdentityTwoTone';
+import { Button } from '@material-ui/core';
 
 function Sidebar() {
     return (
@@ -17,19 +18,17 @@ function Sidebar() {
            <div className="sidebar">
                {/* Chattable icon */}
             <QuestionAnswerTwoToneIcon/>
-               
-            <SidebarOption Icon={HomeWorkTwoToneIcon} text="Home"/>
+               {/* SidebarOption Icons with text */}
+            <SidebarOption active Icon={HomeWorkTwoToneIcon} text="Home"/>
             <SidebarOption Icon={SearchTwoToneIcon} text="Explore"/>
             <SidebarOption Icon={NotificationsNoneTwoToneIcon} text="Notifications"/>
-            <SidebarOption Icon={MailTwoToneIcon} text="Email"/>
+            <SidebarOption Icon={MailTwoToneIcon} text="Messages"/>
             <SidebarOption Icon={BookmarkBorderTwoToneIcon} text="Bookmarks"/>
             <SidebarOption Icon={ListAltTwoToneIcon} text="Lists"/>
-            <SidebarOption Icon={PermIdentityTwoToneIcon} text="User"/>
+            <SidebarOption Icon={PermIdentityTwoToneIcon} text="Profile"/>
             <SidebarOption Icon={MoreHorizTwoToneIcon} text="More"/>
-               {/* SidebarOption */}
-               {/* SidebarOption */}
-
                {/* Button -> Chat */}
+            <Button variant="outlined" className="sidebar__chat" fullWidth>Chat</Button>
            </div> 
         </div>
     )
