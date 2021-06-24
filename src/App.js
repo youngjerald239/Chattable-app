@@ -1,17 +1,17 @@
 import React from "react"
 import './App.css';
 import Sidebar from "./Sidebar";
+import Feed from "./Feed";
 
 function App() {
   return (
     //BEM Namming convention
     <div className="App">
-      <h1>Jerald here, ready to build my own twitter app clone</h1>
 
        {/* Sidebar */}
       <Sidebar/>
        {/* Feed */}
-
+      <Feed/>
        {/* Widgets */}
     </div>
   );

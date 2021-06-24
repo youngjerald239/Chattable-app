@@ -17,7 +17,7 @@ function Sidebar() {
         <div>
            <div className="sidebar">
                {/* Chattable icon */}
-            <QuestionAnswerTwoToneIcon/>
+            <QuestionAnswerTwoToneIcon className="sidebar__chatIcon" style={{fontSize:"35px"}}/>
                {/* SidebarOption Icons with text */}
             <SidebarOption active Icon={HomeWorkTwoToneIcon} text="Home"/>
             <SidebarOption Icon={SearchTwoToneIcon} text="Explore"/>

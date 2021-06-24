@@ -1,3 +1,18 @@
+.sidebar {
+    border-right: 1px solid #d1c4e9;
+    flex: 0.3;
+    min-width: 200px;
+    margin-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.sidebar__chatIcon {
+    color:#673ab7;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
 .sidebar__chat {
     background-color:#673ab7 !important ;
     border: none !important;
