@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Feed.css"
 import Chatbox from './Chatbox'
+import Post from './Post'
 
 function Feed() {
     return (
@@ -12,7 +13,9 @@ function Feed() {
 
             {/* ChatBox */}
         <Chatbox/>
+
             {/* Post */}
+            <Post/>
             {/* Post */}
             {/* Post */}
             {/* Post */}
