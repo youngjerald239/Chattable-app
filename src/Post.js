@@ -2,6 +2,10 @@ import React from 'react'
 import "./Post.css"
 import { Avatar } from "@material-ui/core"
 import VerifiedUserTwoToneIcon from '@material-ui/icons/VerifiedUserTwoTone';
+import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
+import RepeatTwoToneIcon from '@material-ui/icons/RepeatTwoTone';
+import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
+import PublishRoundedIcon from '@material-ui/icons/PublishRounded';
 
 function Post({
     displayName,
@@ -21,8 +25,8 @@ function Post({
           <div className="post__body">
               <div className="post__header">
                   <div className="post__headerText">
-                      <h3>Jerald Young <span>
-                          <VerifiedUserTwoToneIcon className="post__badge"/>
+                      <h3>Jerald Young <span className="post__headerSpecial">
+                          <VerifiedUserTwoToneIcon className="post__badge"/>@jeraldyoung
                       </span></h3>
                   </div>
                   <div className="post__headerDescription">
@@ -30,6 +34,12 @@ function Post({
                   </div>
               </div>
               <img src="https://media2.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt=""/>
+              <div className="post__footer">
+                  <ChatBubbleOutlineRoundedIcon fontSize="small"/>
+                  <RepeatTwoToneIcon fontSize="small"/>
+                  <FavoriteTwoToneIcon fontSize="small"/>
+                  <PublishRoundedIcon fontSize="small"/>
+              </div>
           </div>
         </div>
     )
